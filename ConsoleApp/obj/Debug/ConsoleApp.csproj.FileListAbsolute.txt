@@ -1,0 +1,9 @@
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\bin\Debug\LogicLibrary.dll
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\bin\Debug\LogicLibrary.pdb
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\AD-MIN\source\repos\baitap1\ConsoleApp\obj\Debug\ConsoleApp.pdb

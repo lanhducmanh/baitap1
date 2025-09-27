@@ -1,0 +1,12 @@
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\bin\Debug\LogicLibrary.dll
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\bin\Debug\LogicLibrary.pdb
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsF.5F5EF213.Up2Date
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\Users\AD-MIN\source\repos\baitap1\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb

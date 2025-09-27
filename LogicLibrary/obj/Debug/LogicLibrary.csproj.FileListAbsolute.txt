@@ -1,0 +1,6 @@
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\bin\Debug\LogicLibrary.dll
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\bin\Debug\LogicLibrary.pdb
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\obj\Debug\LogicLibrary.csproj.AssemblyReference.cache
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\obj\Debug\LogicLibrary.csproj.CoreCompileInputs.cache
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\obj\Debug\LogicLibrary.dll
+C:\Users\AD-MIN\source\repos\baitap1\LogicLibrary\obj\Debug\LogicLibrary.pdb

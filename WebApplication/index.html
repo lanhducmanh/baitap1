@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>TÍNH TỔNG (Web)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        input, button {
+            padding: 6px;
+            margin: 5px;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: green;
+        }
+
+        #error {
+            margin-top: 15px;
+            font-weight: bold;
+            color: red;
+        }
+
+        pre.response {
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2>VTW Math Sum (Web)</h2>
+    <p>Nhập dãy số (ngăn cách bởi dấu phẩy):</p>
+    <input type="text" id="numbers" placeholder="Ví dụ: 1,2,3,4">
+    <button id="btn">Tính tổng</button>
+
+    <div id="result"></div>
+    <div id="error"></div>
+    <pre class="response" id="raw" style="display:none;"></pre>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('btn');
+            var numbersInput = document.getElementById('numbers');
+            var resultDiv = document.getElementById('result');
+            var errorDiv = document.getElementById('error');
+            var rawPre = document.getElementById('raw');
+
+            btn.addEventListener('click', callApi);
+
+            function callApi() {
+                resultDiv.innerText = '';
+                errorDiv.innerText = '';
+                rawPre.style.display = 'none';
+                rawPre.innerText = '';
+
+                var nums = numbersInput.value || '';
+                nums = nums.trim();
+                if (nums.length === 0) {
+                    errorDiv.innerText = 'Vui lòng nhập dãy số.';
+                    return;
+                }
+
+                var xhr = new XMLHttpRequest();
+                // Gọi relative URL (cùng host) -> tránh CORS
+                xhr.open('POST', 'api.aspx', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState !== 4) return;
+
+                    // Hiện raw response để debug
+                    rawPre.style.display = 'block';
+                    rawPre.innerText = 'Status: ' + xhr.status + '\n\n' + xhr.responseText;
+
+                    if (!xhr.responseText || xhr.responseText.trim().length === 0) {
+                        errorDiv.innerText = 'Server trả về rỗng (kiểm tra logs hoặc network tab).';
+                        return;
+                    }
+
+                    // Chỉ parse nếu status 200
+                    if (xhr.status === 200) {
+                        try {
+                            var obj = JSON.parse(xhr.responseText);
+                            if (obj.sum !== undefined) {
+                                resultDiv.innerText = 'Tổng = ' + obj.sum;
+                            } else if (obj.error) {
+                                errorDiv.innerText = 'Lỗi server: ' + obj.error;
+                            } else {
+                                errorDiv.innerText = 'JSON không chứa sum, có thể định dạng khác.';
+                            }
+                        } catch (e) {
+                            errorDiv.innerText = 'Phân tích JSON lỗi: ' + e.message;
+                        }
+                    } else {
+                        // Hiển thị lỗi chi tiết từ server
+                        try {
+                            var obj = JSON.parse(xhr.responseText);
+                            if (obj.error) errorDiv.innerText = 'Lỗi: ' + obj.error + ' (status ' + xhr.status + ')';
+                            else errorDiv.innerText = 'Lỗi (status ' + xhr.status + ')';
+                        } catch (e) {
+                            errorDiv.innerText = 'Lỗi (status ' + xhr.status + '). Response không phải JSON.';
+                        }
+                    }
+                };
+
+                xhr.send('input=' + encodeURIComponent(nums));
+            }
+        })();
+    </script>
+</body>
+</html>

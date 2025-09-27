@@ -1,0 +1,10 @@
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\bin\WebApplication.dll.config
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\bin\WebApplication.dll
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\bin\WebApplication.pdb
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\bin\LogicLibrary.dll
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\bin\LogicLibrary.pdb
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\obj\Debug\WebApplication.csproj.AssemblyReference.cache
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\obj\Debug\WebAppli.11721D13.Up2Date
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\AD-MIN\source\repos\baitap1\WebApplication\obj\Debug\WebApplication.pdb
